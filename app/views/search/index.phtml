@@ -1,0 +1,10 @@
+<a href="/index/logout">Log out</a>
+<div class="search-box">
+    <label for='user'>Search places:</label>
+
+    <?= $this->tag->textField('place') ?>
+    <?= $this->tag->submitButton(['value' => 'Search!', 'id' => 'search']) ?>
+</div>
+
+<div id="search-results"></div>
+<div class="bg-danger error-message hidden"><p class="text-danger">Error occured</p></div>

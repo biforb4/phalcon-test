@@ -1,0 +1,21 @@
+<div class="page-header">
+    <h1>Please log in to access the search page</h1>
+</div>
+
+<?php $this->flashSession->output() ?>
+
+<div class="login-form">
+    <?= $this->tag->form('/index/login') ?>
+    <label for='user'>User:</label>
+
+
+    <?= $this->tag->textField('user') ?>
+    <br>
+
+    <label for='password'>Password:</label>
+    <?= $this->tag->passwordField('password') ?>
+    <br>
+
+    <?= $this->tag->submitButton('Log in!') ?>
+    <?= $this->tag->endForm() ?>
+</div>

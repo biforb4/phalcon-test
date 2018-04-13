@@ -1,0 +1,21 @@
+<table id="results-table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Types</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <?php
+    foreach ($results as $result) {
+        echo'<tr>
+            <td>'. $result['name'] .'</td>
+            <td>'. $result['formatted_address'] .'</td>
+            <td>'. implode(', ', $result['types']) .'</td>
+        </tr>';
+    }
+    ?>
+    </tbody>
+</table>
